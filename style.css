@@ -11,51 +11,50 @@ body, html {
 .photo{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     gap: 7%;
-    flex-direction: row;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    flex: 1;
-    background: #ffffff;
-   
 }
 
 .photo-2{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     gap: 7%;
-    flex-direction: row;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    flex: 1;
-    background: #ffffff;
-   
+    flex-direction: column;
+    align-items: center;
 }
 
 .container{
     display: flex;
     min-width: 65%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    flex: 1;
+    min-height: 45vh;
+    background: #ffffff;
 }
 
 .container img{
+    max-height: 375px;
     max-width: 30%;
     border-radius: 10px;
-    margin: 2%;
+    margin: 5%;
 }
 
 .container-2{
     display: flex;
     min-width: 65%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    flex: 1;
+    min-height: 45vh;
+    background: #ffffff;
 }
 
 .container-2 img{
-    max-width: 42%;
+    max-width: 90%;
     border-radius: 10px;
-    margin: 2%; 
+    margin: 5%;
 }
 
 .discount-icon {
@@ -90,12 +89,16 @@ header .logo:hover {
     font-family: "Dancing Script", cursive;
     background: #ffcc00; 
     padding: 14px 20px 38px 18px;
+    margin-top: auto;
+    margin-bottom: auto;
     border-radius: 100px;
     position: relative;
     min-width: 120px;
     max-height: 18px;
     display: inline-block;
     transition: background 0.3s;
+    min-width: 15%;
+    
 }
 
 .discount-banner:hover {
@@ -127,6 +130,7 @@ header .logo:hover {
    min-height: 70vh;
    flex-direction: row;
    background: blue; 
+   flex: 1;
 }
 
 main{
@@ -183,7 +187,6 @@ nav a{
 .text{
     display: flex;
     min-width: 35%;
-    /* flex-grow: 1; */
     flex-direction: column;
     background: #000;
 }
@@ -215,8 +218,6 @@ footer{
     color: #fff;
 	padding-right: 60px;
 	padding-bottom: 30px;
-    flex: 1;
-    /* display: flex; */
 }
 
 footer .title{
